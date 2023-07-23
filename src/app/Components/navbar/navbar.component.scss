@@ -1,0 +1,42 @@
+/* Estilo para los enlaces en el menú de navegación */
+.navbar-nav .nav-link {
+    position: relative;
+    transition: 0.3s; /* Transición para el efecto de línea */
+    margin-right: 10px; /* Añade un margen derecho de 10px entre los enlaces */
+}
+
+/* Estilo para la línea encima de los enlaces al pasar el cursor */
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(67, 253, 67); /* Color de la línea */
+    transform: scaleX(0); /* La línea inicialmente está oculta */
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
+/* Efecto de línea al pasar el cursor por encima del enlace */
+.navbar-nav .nav-link:hover::before {
+    transform: scaleX(1); /* Muestra la línea al 100% */
+}
+
+/* Estilo para centrar los enlaces dentro del contenedor */
+.navegacion {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 5%;
+}
+
+/* Estilo para centrar los enlaces dentro del contenedor */
+.navegacion-drop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+

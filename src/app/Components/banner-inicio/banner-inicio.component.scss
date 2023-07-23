@@ -1,0 +1,46 @@
+/* Estilo para el banner */
+.banner {
+    background: linear-gradient(to right, #acedae, #369369);
+    width: 100%;
+    padding: 200px;
+    text-align: left;
+    color: #0c241a;
+  }
+  
+.banner h1 {
+    margin: 0;
+}
+  
+  /* Estilos responsive para el banner */
+  @media (max-width: 767px) {
+    .banner {
+      padding: 40px;
+    }
+  
+    .banner h1 {
+        
+    }
+
+    .banner h3 {
+        
+    }
+  }
+
+.texto-banner{
+    color: white;
+    font-size: 22px;
+}
+  
+.banner a.btn-primary {
+    background-color: white; /* Fondo blanco */
+    color: #369369; /* Letras verdes */
+    font-size: 18px; /* Tamaño de fuente personalizado */
+    padding: 12px 24px; /* Espaciado del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.banner a.btn-primary:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en el hover */
+}
